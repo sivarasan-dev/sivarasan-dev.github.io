@@ -42,9 +42,13 @@ export default function Home() {
                 <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                   View My Work
                 </button>
-                <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                <a 
+                  href="/Sivarasan-CV.pdf" 
+                  download="Sivarasan-Ponnuthurai-CV.pdf"
+                  className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
+                >
                   Download CV
-                </button>
+                </a>
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
