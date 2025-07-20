@@ -39,7 +39,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Senior Full Stack Developer</h1>
-              <p className="text-xl md:text-2xl mb-8 opacity-90">React.js | Node.js | GraphQL | AWS | TypeScript</p>
+              <p className="text-xl md:text-2xl mb-8 opacity-90">React.js | Node.js | Docker | GraphQL | AWS | TypeScript</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                   View My Work
@@ -143,19 +143,19 @@ export default function Home() {
                 <div className="w-3 h-3 bg-blue-600 rounded-full mr-3"></div>
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Frontend</h3>
               </div>
-              <div className="space-y-3">
-                <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">React</span>
-                <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">Next.js</span>
-                <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
-                <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">Redux</span>
-              </div>
+              <div className="flex flex-wrap gap-3">
+  <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">React</span>
+  <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">Next.js</span>
+  <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+  <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">Redux</span>
+</div>
             </div>
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <div className="flex items-center mb-4">
                 <div className="w-3 h-3 bg-green-600 rounded-full mr-3"></div>
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Backend</h3>
               </div>
-              <div className="space-y-3">
+              <div className="flex flex-wrap gap-3">
                 <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">Node.js</span>
                 <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">Express</span>
                 <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">GraphQL</span>
@@ -167,7 +167,7 @@ export default function Home() {
                 <div className="w-3 h-3 bg-purple-600 rounded-full mr-3"></div>
                 <h3 className="text-xl font-semibold text-gray-800 dark:text-white">CI/CD Pipeline Automation</h3>
               </div>
-              <div className="space-y-3">
+              <div className="flex flex-wrap gap-3">
                 <span className="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">AWS/ECS</span>
                 <span className="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">Lambda</span>
                 <span className="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">Docker</span>
@@ -294,6 +294,29 @@ export default function Home() {
                 <p>• Enables sellers to manage property listings and buyers to research, identify, underwrite and transact on investment portfolios.</p>
                 <p>• Joined project mid-development, contributed to frontend and backend improvements, bug fixes, and client requirement implementations.</p>
                 <p>• Technologies: React, Redux, Node.js, Express, PHP</p>
+              </div>
+            </div>
+
+            {/* Taxi Hailing Mobile Application */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">Taxi Hailing Mobile Application</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">Apr 2017 - Nov 2018</p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-4 md:mt-0">
+                  <span className="inline-block bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm">React Native</span>
+                  <span className="inline-block bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm">Redux</span>
+                  <span className="inline-block bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm">Node.js</span>
+                  <span className="inline-block bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm">Socket.io</span>
+                </div>
+              </div>
+              <div className="space-y-3 text-gray-700 dark:text-gray-300">
+                <p>• Comprehensive taxi hailing platform with 4 modules: Passenger Mobile App (Android/iOS), Driver Mobile App (Android/iOS), Corporate Module, and Admin Module.</p>
+                <p>• Passenger Module: Get taxi, book taxi, trip history, profile, customer support. Driver Module: Dashboard, traffic map, financial view, notifications.</p>
+                <p>• Corporate Module: Quick booking, schedule booking, payments. Admin Module: System configuration, vehicle types, payment types, pricing, notification methods.</p>
+                <p>• Developed admin module with quick booking and taxi tracking features using Google Places API and Google Direction API.</p>
+                <p>• Technologies: React, Redux, React Native, Node.js, Express, Socket.io, MongoDB, AWS S3</p>
               </div>
             </div>
           </div>
