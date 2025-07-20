@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   description: "Experienced Full Stack Developer with 8+ years in frontend and backend development. Specialized in React.js, Next.js, Node.js, GraphQL, and TypeScript.",
   keywords: "Full Stack Developer, React.js, Next.js, Node.js, GraphQL, TypeScript, AWS, MongoDB, PostgreSQL",
   authors: [{ name: "Sivarasan Ponnuthurai" }],
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: "Sivarasan Ponnuthurai - Senior Full Stack Developer",
     description: "Experienced Full Stack Developer with 8+ years in frontend and backend development",
@@ -31,6 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
