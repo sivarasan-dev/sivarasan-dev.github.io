@@ -31,7 +31,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="/Sivarasan-CV.pdf" 
-                  download="Sivarasan-Ponnuthurai-CV.pdf"
+                  download="Ponnuthurai-Sivarasan-CV.pdf"
                   className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
                 >
                   Download CV

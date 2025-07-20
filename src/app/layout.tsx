@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sivarasan Ponnuthurai - Senior Full Stack Developer",
+  title: "Ponnuthurai Sivarasan - Senior Full Stack Developer",
   description: "Experienced Full Stack Developer with 8+ years in frontend and backend development. Specialized in React.js, Next.js, Node.js, GraphQL, and TypeScript.",
   keywords: "Full Stack Developer, React.js, Next.js, Node.js, GraphQL, TypeScript, AWS, MongoDB, PostgreSQL",
-  authors: [{ name: "Sivarasan Ponnuthurai" }],
+  authors: [{ name: "Ponnuthurai Sivarasan" }],
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: "Sivarasan Ponnuthurai - Senior Full Stack Developer",
+    title: "Ponnuthurai Sivarasan - Senior Full Stack Developer",
     description: "Experienced Full Stack Developer with 8+ years in frontend and backend development",
     type: "website",
   },
