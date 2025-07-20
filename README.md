@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sivarasan Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Design**: Clean and professional portfolio layout
+- **Responsive**: Works perfectly on all devices
+- **Dark Mode**: Built-in dark/light theme support
+- **Fast Performance**: Optimized with Next.js static export
+- **SEO Optimized**: Meta tags and structured data
+- **Accessible**: WCAG compliant design
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Deployment**: GitHub Pages
+
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone <your-repo-url>
+cd sivarasan-portfolio
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### GitHub Pages (Recommended)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Push to GitHub**: Push your code to a GitHub repository
+2. **Enable GitHub Pages**: 
+   - Go to Settings → Pages
+   - Source: Deploy from a branch
+   - Branch: `main` → `/ (root)`
+   - Save
+3. **Enable GitHub Actions**: The workflow will automatically deploy on push to main
 
-## Learn More
+### Manual Deployment
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Build the project
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# The static files will be in the `out` directory
+# Upload the contents of `out` to your web server
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+sivarasan-portfolio/
+├── src/
+│   └── app/
+│       ├── layout.tsx      # Root layout
+│       ├── page.tsx        # Home page
+│       └── globals.css     # Global styles
+├── public/                 # Static assets
+├── .github/workflows/      # GitHub Actions
+└── out/                    # Build output
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Content**: Update `src/app/page.tsx` with your information
+- **Styling**: Modify `src/app/globals.css` for custom styles
+- **Images**: Replace images in `public/` directory
+- **CV**: Update the CV link in the hero section
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ by Sivarasan Ponnuthurai
