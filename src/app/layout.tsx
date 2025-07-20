@@ -17,6 +17,13 @@ export const metadata: Metadata = {
   description: "Experienced Full Stack Developer with 8+ years in frontend and backend development. Specialized in React.js, Next.js, Node.js, GraphQL, and TypeScript.",
   keywords: "Full Stack Developer, React.js, Next.js, Node.js, GraphQL, TypeScript, AWS, MongoDB, PostgreSQL",
   authors: [{ name: "Sivarasan Ponnuthurai" }],
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: "Sivarasan Ponnuthurai - Senior Full Stack Developer",
     description: "Experienced Full Stack Developer with 8+ years in frontend and backend development",
