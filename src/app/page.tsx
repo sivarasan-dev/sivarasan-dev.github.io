@@ -1,15 +1,8 @@
 "use client";
 
+import Image from "next/image";
 
 export default function Home() {
-
-
-
-
-
-  // Prevent hydration mismatch by not rendering theme-dependent content until mounted
- 
-
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Navigation Bar */}
@@ -24,15 +17,27 @@ export default function Home() {
               <a href="#experience" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Experience</a>
               <a href="#contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Contact</a>
             </div>
+            <div className="flex items-center space-x-4">
+              <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                <svg className="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+              </button>
+              <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                <svg className="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-20 relative">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Senior Full Stack Developer</h1>
               <p className="text-xl md:text-2xl mb-8 opacity-90">React.js | Node.js | GraphQL | AWS | TypeScript</p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -48,17 +53,22 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative w-80 h-80 bg-blue-500 rounded-full flex items-center justify-center">
-                <div className="w-64 h-64 bg-blue-400 rounded-full flex items-center justify-center">
-                  <div className="w-48 h-48 bg-blue-300 rounded-full flex items-center justify-center">
-                    <svg className="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                  </div>
+          <div className="hidden lg:block">
+              <div className="absolute top-0 w-1/2 h-full">
+                <div className="relative w-full h-full">
+                  <Image
+                    src="/portfolio-photo.png"
+                    alt="Ponnuthurai Sivarasan - Senior Full Stack Developer"
+                    fill
+                    className="object-contain"
+                    priority
+                    sizes="50vw"
+                  />
                 </div>
               </div>
             </div>
+            
+            
           </div>
         </div>
       </section>
@@ -352,7 +362,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-300">© 2024 Sivarasan Ponnuthurai. All rights reserved.</p>
+          <p className="text-gray-300">© 2025 Ponnuthurai Sivarasan. All rights reserved.</p>
         </div>
       </footer>
     </div>
