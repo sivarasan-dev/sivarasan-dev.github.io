@@ -1,6 +1,15 @@
-import Image from "next/image";
+"use client";
+
 
 export default function Home() {
+
+
+
+
+
+  // Prevent hydration mismatch by not rendering theme-dependent content until mounted
+ 
+
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Navigation Bar */}
@@ -14,18 +23,6 @@ export default function Home() {
               <a href="#projects" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Projects</a>
               <a href="#experience" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Experience</a>
               <a href="#contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors">Contact</a>
-            </div>
-            <div className="flex items-center space-x-4">
-              <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                <svg className="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                </svg>
-              </button>
-              <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                <svg className="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-                </svg>
-              </button>
             </div>
           </div>
         </div>
@@ -68,10 +65,10 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-16">
         {/* About Me Section */}
-        <section id="about" className="mb-16 mt-3">
+        <section id="about" className="mb-12 mt-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">About Me</h2>
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 mt-2">About Me</h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
                 Experienced Full Stack Developer with 8+ years in frontend and backend development. 
                 Proven expertise in JavaScript, TypeScript, GraphQL, Node.js, and full-stack frameworks 
@@ -80,7 +77,7 @@ export default function Home() {
                 on AWS, leading engineering teams, and delivering high-quality, user-centric applications.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg border border-blue-100 dark:border-gray-600">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg border border-blue-100 dark:border-gray-600 mt-2">
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6 flex items-center">
                 <svg className="w-6 h-6 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clipRule="evenodd" />
@@ -96,17 +93,6 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Location</p>
-                    <p className="text-gray-800 dark:text-white font-medium">Singapore</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4 p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
-                  <div className="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-green-600 dark:text-green-300" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Website</p>
                     <p className="text-gray-800 dark:text-white font-medium">Singapore</p>
                   </div>
                 </div>

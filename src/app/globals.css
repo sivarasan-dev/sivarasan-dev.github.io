@@ -12,11 +12,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark mode variables */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
@@ -25,6 +24,7 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Custom scrollbar */
@@ -46,27 +46,34 @@ body {
 }
 
 /* Dark mode scrollbar */
-@media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar-track {
-    background: #2d2d2d;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #555;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #777;
-  }
+.dark ::-webkit-scrollbar-track {
+  background: #2d2d2d;
 }
 
-/* Smooth transitions */
+.dark ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Smooth transitions for theme switching */
 * {
-  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 /* Focus styles for accessibility */
 a:focus, button:focus {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
+}
+
+/* Theme toggle animation */
+.theme-toggle {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
 }
