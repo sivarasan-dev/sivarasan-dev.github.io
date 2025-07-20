@@ -178,30 +178,122 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="mb-16 mt-3">
+        <section id="projects" className="mb-16 scroll-mt-20">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">GraphQL API for Editorial</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Developed a comprehensive GraphQL API for editorial content management system, 
-                enabling efficient data querying and real-time updates for publication platforms.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">GraphQL</span>
-                <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">AWS</span>
+          <div className="space-y-8">
+            {/* Koach */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">Koach (E-learning Platform)</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">Feb 2020 - Sep 2021</p>
+                  <a href="https://ppis.knod.sg/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://ppis.knod.sg/</a>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-4 md:mt-0">
+                  <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">React</span>
+                  <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">Redux</span>
+                  <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">AWS</span>
+                  <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                </div>
+              </div>
+              <div className="space-y-3 text-gray-700 dark:text-gray-300">
+                <p>• Koach is a streaming platform purpose-built for remote learning, delivering online training and e-assessments with user experience as its core concern.</p>
+                <p>• Multi-user system with Super Admin, Admin, Editor, Moderator, and Student roles. Super Admin manages groups, users, content, and access restrictions.</p>
+                <p>• AWS Cognito and IAM for authentication, S3 for content storage, ECS for backend deployment, CloudFront for content distribution.</p>
+                <p>• Technologies: React, React Hooks, Redux, AWS Amplify, S3, WebSocket, Java, MongoDB, CloudFront</p>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Admin Dashboard</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Built a comprehensive admin dashboard with real-time analytics, 
-                user management, and content moderation features for enterprise clients.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">React</span>
-                <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">Node.js</span>
-                <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">REST</span>
+
+            {/* BookCabin */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">BookCabin (Flights Booking Platform)</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">Jun 2020 - Jan 2021</p>
+                  <a href="https://www.bookcabin.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://www.bookcabin.com/</a>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-4 md:mt-0">
+                  <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">React</span>
+                  <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">Redux Saga</span>
+                  <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">Micro Frontend</span>
+                  <span className="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">C#</span>
+                </div>
+              </div>
+              <div className="space-y-3 text-gray-700 dark:text-gray-300">
+                <p>• Online flight and hotel booking platform with micro frontend architecture consisting of three applications: Flight Search, Hotel Search, and Checkout.</p>
+                <p>• Flight Search: Search flights by departure/arrival, filter by price/stops/airline, view offers and deals.</p>
+                <p>• Hotel Search: Search hotels, view rooms, filter by ratings/price/cancellation policy, book accommodations.</p>
+                <p>• Checkout: Payment processing for flights and hotels using Midtrans payment gateway.</p>
+                <p>• Technologies: React, Redux, React Hooks, Redux Saga, React Context API, C#, Midtrans</p>
+              </div>
+            </div>
+
+            {/* KoachHub */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">KoachHub (iOS App)</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">Mar 2020 - Jan 2021</p>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-4 md:mt-0">
+                  <span className="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">React Native</span>
+                  <span className="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">Redux</span>
+                  <span className="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">AWS Lambda</span>
+                  <span className="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">Docker</span>
+                </div>
+              </div>
+              <div className="space-y-3 text-gray-700 dark:text-gray-300">
+                <p>• Mobile and tablet responsive iOS app for sports coaching and team management with customized themes for different clubs.</p>
+                <p>• Three user types: Player, Coach, Head Coach. Head Coach manages users, teams, events, schedules training/matches, assigns players, tracks statistics.</p>
+                <p>• Players can update profiles, view calendar events, accept/reject match invitations, view locations on Google Maps, receive push notifications.</p>
+                <p>• Technologies: React Native, React Hooks, Redux, Redux Thunk, Java, AWS Lambda, S3, Amplify, Docker, ECS, CloudFront</p>
+              </div>
+            </div>
+
+            {/* Kora */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">Kora (Chef Booking Website)</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">Jul 2019 - Feb 2020</p>
+                  <a href="https://mykoralife.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://mykoralife.com/</a>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-4 md:mt-0">
+                  <span className="inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm">React</span>
+                  <span className="inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm">Node.js</span>
+                  <span className="inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                  <span className="inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm">Braintree</span>
+                </div>
+              </div>
+              <div className="space-y-3 text-gray-700 dark:text-gray-300">
+                <p>• Chef booking platform connecting hosts with chefs based on cuisine preferences, dietary restrictions, and location.</p>
+                <p>• Hosts create profiles with cuisine preferences, diet restrictions, favorite dishes, allergies, and location. Book chefs, cancel bookings, rate chefs.</p>
+                <p>• Chefs provide available slots, special dishes, ingredients information, and location. Can accept/reject booking requests.</p>
+                <p>• Microservice architecture with Braintree payment integration, S3 and CloudFront for file storage, EC2 for hosting, Docker for deployment.</p>
+                <p>• Technologies: React, Redux, Redux Thunk, React Hooks, Node.js, Express, PostgreSQL, Braintree, AWS S3, CloudFront</p>
+              </div>
+            </div>
+
+            {/* SFRhub */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">SFRhub Advisors</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">Nov 2018 - Jul 2019</p>
+                  <a href="https://www.sfrhubblog.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://www.sfrhubblog.com/</a>
+                </div>
+                <div className="flex flex-wrap gap-2 mt-4 md:mt-0">
+                  <span className="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm">React</span>
+                  <span className="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm">Redux</span>
+                  <span className="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm">Node.js</span>
+                  <span className="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm">PHP</span>
+                </div>
+              </div>
+              <div className="space-y-3 text-gray-700 dark:text-gray-300">
+                <p>• Online marketplace in USA for Single-Family-Rental (SFR) and Build-For-Rent (BFR) investment portfolio sellers and buyers.</p>
+                <p>• Enables sellers to manage property listings and buyers to research, identify, underwrite and transact on investment portfolios.</p>
+                <p>• Joined project mid-development, contributed to frontend and backend improvements, bug fixes, and client requirement implementations.</p>
+                <p>• Technologies: React, Redux, Node.js, Express, PHP</p>
               </div>
             </div>
           </div>
