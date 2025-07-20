@@ -64,10 +64,10 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-16">
         {/* About Me Section */}
-        <section id="about" className="mb-16">
+        <section id="about" className="mb-16 mt-3">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 mt-2">About Me</h2>
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">About Me</h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
                 Experienced Full Stack Developer with 8+ years in frontend and backend development. 
                 Proven expertise in JavaScript, TypeScript, GraphQL, Node.js, and full-stack frameworks 
@@ -76,33 +76,58 @@ export default function Home() {
                 on AWS, leading engineering teams, and delivering high-quality, user-centric applications.
               </p>
             </div>
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4 mt-2">Contact Information</h3>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg border border-blue-100 dark:border-gray-600">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6 flex items-center">
+                <svg className="w-6 h-6 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clipRule="evenodd" />
+                </svg>
+                Contact Information
+              </h3>
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700 dark:text-gray-300">Singapore</span>
+                <div className="flex items-center space-x-4 p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+                  <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-blue-600 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Location</p>
+                    <p className="text-gray-800 dark:text-white font-medium">Singapore</p>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700 dark:text-gray-300">Singapore</span>
+                <div className="flex items-center space-x-4 p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+                  <div className="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-green-600 dark:text-green-300" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Website</p>
+                    <p className="text-gray-800 dark:text-white font-medium">Singapore</p>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
-                  <span className="text-gray-700 dark:text-gray-300">+65 87137467</span>
+                <div className="flex items-center space-x-4 p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+                  <div className="w-10 h-10 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-purple-600 dark:text-purple-300" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Phone</p>
+                    <p className="text-gray-800 dark:text-white font-medium">+65 87137467</p>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  <a href="mailto:rasanthurai1992@gmail.com" className="text-blue-600 hover:underline">rasanthurai1992@gmail.com</a>
+                <div className="flex items-center space-x-4 p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+                  <div className="w-10 h-10 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-orange-600 dark:text-orange-300" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Email</p>
+                    <a href="mailto:rasanthurai1992@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">rasanthurai1992@gmail.com</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,7 +135,7 @@ export default function Home() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="mb-16 mt-2">
+        <section id="skills" className="mb-16 mt-3">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
@@ -153,8 +178,8 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 mt-2">Projects</h2>
+        <section id="projects" className="mb-16 mt-3">
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">GraphQL API for Editorial</h3>
@@ -183,8 +208,8 @@ export default function Home() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 mt-2">Experience</h2>
+        <section id="experience" className="mb-16 mt-3">
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Experience</h2>
           <div className="space-y-6">
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
@@ -250,7 +275,7 @@ export default function Home() {
         </section>
 
         {/* Achievements & Certifications */}
-        <section id="achievements" className="mb-16">
+        <section id="achievements" className="mb-16 mt-3">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 flex items-center">
             <svg className="w-8 h-8 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 14l9-5-9-5-9 5 9 5z"/>
@@ -280,7 +305,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="mb-16">
+        <section id="contact" className="mb-16 mt-3">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Contact</h2>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
